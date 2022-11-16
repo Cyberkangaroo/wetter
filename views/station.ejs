@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name = "Author" content = "Jonas Kloos">
+    <meta name = "description" content = "Liste von Wetterstationen">
+
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+
+    <script language="javascript" type="text/javascript" src="scripts/station.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    </head>  
+    <body onload="init('<%= id %>')">
+        <main>
+            <h1><%=ort %></h1>
+            station
+            <form id="date_form">
+                <input type="date" id="date_picker">
+                <input type="button" onclick="select_date()" id="tag_select" value="Tag anzeigen">
+            </form>
+            <form>
+                <input type="date" id="begin_date">
+                <input type="date" id="end_date">
+                <input type="button" onclick="plot_time_span()" id="time_spann_select" value="Zeitraum anzeigen">
+            </form>
+           
+            <div id="daten"></div>
+            <canvas id="temperaturen" width="10" height="10"></canvas>
+            <canvas id="druck" width="10" height="10"></canvas>
+            <canvas id="luftfeuchtigkeit" width="10" height="10"></canvas>
+        </main>
+    </body>
+</html>

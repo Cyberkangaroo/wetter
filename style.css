@@ -1,0 +1,87 @@
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(100deg, #6cbdb3, #e6f7f5);
+    }
+
+    .station_button {
+        background-color: #92c2bc;
+        height: 100%;
+        width: 100%;
+        font-size: xx-large;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        height: 80%;
+        width: 100%;
+    }
+
+    h1 {
+        order: 1;
+        font-size: 270%;
+    }
+
+    main {
+        order: 2;
+        height: 100%;
+        width: 50%;
+    }
+
+    .station_select {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(100deg, #6cbdb3, #e6f7f5);
+    }
+
+    .station_button {
+        background-color: #92c2bc;
+        height: 100%;
+        width: 100%;
+        font-size: 250%;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        height: 80%;
+        width: 100%;
+    }
+
+    h1 {
+        order: 1;
+        font-size: 270%;
+    }
+
+    main {
+        order: 2;
+        height: 100%;
+        width: 50%;
+    }
+
+    .station_select {
+        height: 100%;
+        width: 100%;
+    }
+
+}
